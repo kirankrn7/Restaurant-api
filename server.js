@@ -62,7 +62,7 @@ app.get("/quantum-analysis", (req, res) => {
       }
 
       res.status(200).json({ 
-        message: "Quantum analysis completed successfully",
+        message: "Quantum analysis complete successfully",
         output: stdout.trim() });
     }
   );
