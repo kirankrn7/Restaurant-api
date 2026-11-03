@@ -43,6 +43,114 @@ const INITIAL_RECOMMENDATIONS = [
     highlight:
       "A popular Wisconsin beer hall featuring fish fry and cheese curds.",
   },
+  {
+    id: "rec-saffron",
+    name: "Saffron - Modern Indian Dining",
+    cuisine: "Indian",
+    location: "Downtown, Milwaukee",
+    rating: 4.4,
+    priceRange: "$$$",
+    highlight: "Modern Indian dishes with traditional flavors.",
+  },
+  {
+    id: "rec-la-merenda",
+    name: "La Merenda",
+    cuisine: "International / Tapas",
+    location: "Walker's Point, Milwaukee",
+    rating: 4.4,
+    priceRange: "$$",
+    highlight: "Global small plates with fresh ingredients.",
+  },
+  {
+    id: "rec-guanajuato",
+    name: "Guanajuato Mexican Restaurant",
+    cuisine: "Mexican",
+    location: "Bay View, Milwaukee",
+    rating: 4.1,
+    priceRange: "$",
+    highlight: "Traditional Mexican food and hearty meals.",
+  },
+  {
+    id: "rec-story-hill",
+    name: "Story Hill BKC",
+    cuisine: "American",
+    location: "Milwaukee",
+    rating: 4.6,
+    priceRange: "$$",
+    highlight: "A neighborhood restaurant serving brunch and American favorites.",
+  },
+  {
+    id: "rec-morel",
+    name: "Morel",
+    cuisine: "New American",
+    location: "Walker's Point, Milwaukee",
+    rating: 4.6,
+    priceRange: "$$$",
+    highlight: "Seasonal dishes featuring locally sourced ingredients.",
+  },
+  {
+    id: "rec-maders",
+    name: "Mader's Restaurant",
+    cuisine: "German",
+    location: "Downtown, Milwaukee",
+    rating: 4.3,
+    priceRange: "$$",
+    highlight: "Classic German cuisine and traditional favorites.",
+  },
+  {
+    id: "rec-thai-kitchen",
+    name: "Thai A Kitchen",
+    cuisine: "Thai",
+    location: "East Side, Milwaukee",
+    rating: 4.3,
+    priceRange: "$",
+    highlight: "Thai noodles, curries, and rice dishes.",
+  },
+  {
+    id: "rec-oscars",
+    name: "Oscar's Pub & Grill",
+    cuisine: "American",
+    location: "Milwaukee",
+    rating: 4.4,
+    priceRange: "$$",
+    highlight: "Classic burgers, fries, and comfort food.",
+  },
+  {
+    id: "rec-birch",
+    name: "Birch",
+    cuisine: "New American",
+    location: "East Side, Milwaukee",
+    rating: 4.2,
+    priceRange: "$$$",
+    highlight: "Seasonal cooking with wood-fired dishes.",
+  },
+  {
+    id: "rec-sanford",
+    name: "Sanford",
+    cuisine: "Fine Dining",
+    location: "Milwaukee",
+    rating: 4.8,
+    priceRange: "$$$$",
+    highlight: "Creative seasonal fine dining.",
+  },
+  {
+    id: "rec-guadalajara",
+    name: "Guadalajara Restaurant",
+    cuisine: "Mexican",
+    location: "Milwaukee",
+    rating: 4.6,
+    priceRange: "$",
+    highlight: "Traditional Mexican meals and combination plates.",
+  },
+  {
+    id: "rec-benelux",
+    name: "Café Benelux",
+    cuisine: "Cafe / American",
+    location: "Historic Third Ward, Milwaukee",
+    rating: 3.8,
+    priceRange: "$$",
+    highlight: "Brunch, sandwiches, and rooftop dining.",
+  },
 ];
 
 function getRestaurantImage(restaurant) {
@@ -128,6 +236,18 @@ function getRestaurantImage(restaurant) {
     cuisine.includes("taco")
   ) {
     return "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?w=800&auto=format&fit=crop&q=80";
+  }
+
+  if (cuisine.includes("indian")) {
+    return "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop&q=80";
+  }
+
+  if (cuisine.includes("thai")) {
+    return "https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800&auto=format&fit=crop&q=80";
+  }
+
+  if (cuisine.includes("german")) {
+    return "https://images.unsplash.com/photo-1562967914-608f82629710?w=800&auto=format&fit=crop&q=80";
   }
 
   return "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&auto=format&fit=crop&q=80";
