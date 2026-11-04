@@ -53,7 +53,7 @@ app.post("/api/auth/register", async (req, res) => {
     });
 
     res.status(201).json({
-      message: "User registered successfully.",
+      message: "User registered successful.",
       user: {
         id: user._id,
         name: user.name,
@@ -64,13 +64,13 @@ app.post("/api/auth/register", async (req, res) => {
   } catch (error) {
     if (error.code === 11000) {
       return res.status(409).json({
-        error: "Email is already registered."
+        error: "Email is already signed-up."
       });
     }
 
     console.error(error.message);
     res.status(500).json({
-      error: "Registration failed."
+      error: "Registration fail."
     });
   }
 });

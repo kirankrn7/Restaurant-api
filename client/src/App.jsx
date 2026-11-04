@@ -6,13 +6,13 @@ const API_URL = "http://localhost:3000";
 const INITIAL_RECOMMENDATIONS = [
   {
     id: "rec-colectivo",
-    name: "Colectivo Coffee Lakefront",
+    name: "Collectivo Coffee Lakefront",
     cuisine: "Cafe",
     location: "Lincoln Memorial Dr, Milwaukee",
     rating: 4.8,
     priceRange: "$$",
     highlight:
-      "A lakefront cafe featuring wood-roasted coffee, fresh bakery items, and patio views.",
+      "A lakefront cafe featuring wood-roasted coffee, fresh bakery items, and patio view.",
   },
   {
     id: "rec-odd-duck",
@@ -20,18 +20,9 @@ const INITIAL_RECOMMENDATIONS = [
     cuisine: "Global Small Plates",
     location: "Walker's Point, Milwaukee",
     rating: 4.8,
-    priceRange: "$$$",
+    priceRange: "$$",
     highlight:
       "A rotating small-plate menu featuring global flavors and Wisconsin produce.",
-  },
-  {
-    id: "rec-dandan",
-    name: "DanDan",
-    cuisine: "Chinese / Asian",
-    location: "Historic Third Ward, Milwaukee",
-    rating: 4.7,
-    priceRange: "$$$",
-    highlight: "Modern Asian dishes, noodles, and creative dim sum.",
   },
   {
     id: "rec-lakefront",
@@ -41,7 +32,7 @@ const INITIAL_RECOMMENDATIONS = [
     rating: 4.7,
     priceRange: "$$",
     highlight:
-      "A popular Wisconsin beer hall featuring fish fry and cheese curds.",
+      "A popular Wisconsin best beer hall featuring fish fry and cheese curds.",
   },
   {
     id: "rec-saffron",
@@ -49,7 +40,7 @@ const INITIAL_RECOMMENDATIONS = [
     cuisine: "Indian",
     location: "Downtown, Milwaukee",
     rating: 4.4,
-    priceRange: "$$$",
+    priceRange: "$$",
     highlight: "Modern Indian dishes with traditional flavors.",
   },
   {
@@ -67,7 +58,7 @@ const INITIAL_RECOMMENDATIONS = [
     cuisine: "Mexican",
     location: "Bay View, Milwaukee",
     rating: 4.1,
-    priceRange: "$",
+    priceRange: "$$",
     highlight: "Traditional Mexican food and hearty meals.",
   },
   {
